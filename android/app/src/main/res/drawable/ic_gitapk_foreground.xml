@@ -21,14 +21,11 @@
         android:strokeLineJoin="round"
         android:fillColor="@android:color/transparent"
         android:pathData="M54,52 L54,67 M54,58 L67,50" />
-    <circle
+    <!-- Git branch nodes, drawn as vector paths for AAPT compatibility -->
+    <path
         android:fillColor="#FFFFFF"
-        android:cx="54"
-        android:cy="67"
-        android:radius="5" />
-    <circle
+        android:pathData="M49,62 L59,62 L59,72 L49,72 Z" />
+    <path
         android:fillColor="#FFFFFF"
-        android:cx="67"
-        android:cy="50"
-        android:radius="5" />
+        android:pathData="M62,45 L72,45 L72,55 L62,55 Z" />
 </vector>
