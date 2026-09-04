@@ -2,12 +2,13 @@ package org.gitapk.app;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.graphics.Typeface;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -39,8 +40,14 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle state) {
         super.onCreate(state);
+        applyThemeMode();
         showHome();
         loadCatalog();
+    }
+
+    private void applyThemeMode() {
+        boolean dark = getPreferences(MODE_PRIVATE).getBoolean("dark_mode", false);
+        setTheme(dark ? android.R.style.Theme_Material_NoActionBar : android.R.style.Theme_Material_Light_NoActionBar);
     }
 
     @Override
@@ -53,60 +60,105 @@ public class MainActivity extends Activity {
         }
     }
 
+    private int color(int id) {
+        return getResources().getColor(id);
+    }
+
+    private GradientDrawable roundedBackground(int fill, int stroke) {
+        GradientDrawable bg = new GradientDrawable();
+        bg.setColor(fill);
+        bg.setCornerRadius(28);
+        if (stroke != 0) bg.setStroke(1, stroke);
+        return bg;
+    }
+
     private void setupPage(String titleText, String subtitleText) {
         ScrollView scroll = new ScrollView(this);
+        scroll.setFillViewport(true);
         list = new LinearLayout(this);
         list.setOrientation(LinearLayout.VERTICAL);
-        list.setPadding(32, 40, 32, 32);
+        list.setPadding(24, 24, 24, 32);
+        list.setBackgroundColor(color(R.color.gitapk_surface));
         scroll.addView(list);
         setContentView(scroll);
 
+        LinearLayout header = new LinearLayout(this);
+        header.setGravity(Gravity.CENTER_VERTICAL);
+        header.setPadding(4, 4, 4, 4);
+
+        LinearLayout titleBox = new LinearLayout(this);
+        titleBox.setOrientation(LinearLayout.VERTICAL);
         TextView title = new TextView(this);
         title.setText(titleText);
-        title.setTextSize(32);
+        title.setTextSize(30);
+        title.setTextColor(color(R.color.gitapk_text));
         title.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
-        list.addView(title);
+        titleBox.addView(title);
 
         TextView subtitle = new TextView(this);
         subtitle.setText(subtitleText);
-        subtitle.setTextSize(16);
-        list.addView(subtitle);
+        subtitle.setTextSize(15);
+        subtitle.setTextColor(color(R.color.gitapk_secondary_text));
+        titleBox.addView(subtitle);
+        header.addView(titleBox, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+
+        Button menu = new Button(this);
+        menu.setText("☰");
+        menu.setTextSize(25);
+        menu.setContentDescription("Browse categories and settings");
+        menu.setMinWidth(0);
+        menu.setPadding(4, 0, 4, 0);
+        menu.setBackground(roundedBackground(color(R.color.gitapk_card), 0));
+        menu.setOnClickListener(v -> showMenu());
+        header.addView(menu, new LinearLayout.LayoutParams(58, 58));
+        list.addView(header);
     }
 
-    private void addNavigation() {
-        LinearLayout nav = new LinearLayout(this);
-        nav.setOrientation(LinearLayout.HORIZONTAL);
+    private void showMenu() {
+        setupPage("Menu", "Browse GitAPK");
 
-        Button apps = new Button(this);
-        apps.setText("Apps");
+        Button apps = menuButton("▣  All Apps");
         apps.setOnClickListener(v -> showHome());
-        nav.addView(apps, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        list.addView(apps);
 
-        Button categories = new Button(this);
-        categories.setText("Categories");
+        Button categories = menuButton("☰  Categories");
         categories.setOnClickListener(v -> showCategories());
-        nav.addView(categories, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        list.addView(categories);
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.setMargins(0, 20, 0, 20);
-        list.addView(nav, params);
+        boolean dark = getPreferences(MODE_PRIVATE).getBoolean("dark_mode", false);
+        Button theme = menuButton(dark ? "☀  Light mode" : "☾  Dark mode");
+        theme.setOnClickListener(v -> {
+            getPreferences(MODE_PRIVATE).edit().putBoolean("dark_mode", !dark).apply();
+            recreate();
+        });
+        list.addView(theme);
+    }
+
+    private Button menuButton(String text) {
+        Button button = new Button(this);
+        button.setText(text);
+        button.setTextSize(17);
+        button.setTextColor(color(R.color.gitapk_text));
+        button.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
+        button.setPadding(24, 0, 24, 0);
+        button.setBackground(roundedBackground(color(R.color.gitapk_card), 0));
+        LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, 58);
+        p.setMargins(0, 10, 0, 10);
+        list.addView(button, p);
+        return button;
     }
 
     private void showHome() {
         setupPage("GitAPK", "Open-source apps from Git repositories");
-        addNavigation();
         if (catalogApps != null) showApps(catalogApps, null);
     }
 
     private void showCategories() {
-        setupPage("Categories", "Browse GitAPK apps by category");
-        addNavigation();
+        setupPage("Categories", "Find apps by what they do");
 
         if (catalogApps == null) {
-            TextView loading = new TextView(this);
-            loading.setText("\nLoading categories…");
-            loading.setTextSize(18);
+            TextView loading = bodyText("Loading categories…");
             list.addView(loading);
             return;
         }
@@ -118,33 +170,34 @@ public class MainActivity extends Activity {
         }
 
         for (String category : categories) {
-            Button button = new Button(this);
-            button.setText(category);
-            button.setTextSize(17);
+            Button button = menuButton("›  " + category);
             button.setOnClickListener(v -> showCategory(category));
-            list.addView(button);
         }
     }
 
     private void showCategory(String category) {
-        setupPage(category, "Apps in " + category);
-        addNavigation();
+        setupPage(category, "Apps in this category");
 
-        Button back = new Button(this);
-        back.setText("← All Categories");
+        Button back = menuButton("‹  All Categories");
         back.setOnClickListener(v -> showCategories());
-        list.addView(back);
 
         if (catalogApps != null) {
             for (int i = 0; i < catalogApps.length(); i++) {
                 JSONObject app = catalogApps.optJSONObject(i);
                 if (app != null && category.equals(app.optString("category", "Other"))) {
-                    try {
-                        addAppCard(app);
-                    } catch (Exception ignored) { }
+                    try { addAppCard(app); } catch (Exception ignored) { }
                 }
             }
         }
+    }
+
+    private TextView bodyText(String text) {
+        TextView view = new TextView(this);
+        view.setText(text);
+        view.setTextSize(17);
+        view.setTextColor(color(R.color.gitapk_text));
+        view.setPadding(8, 20, 8, 20);
+        return view;
     }
 
     private boolean canInstallPackages() {
@@ -163,10 +216,7 @@ public class MainActivity extends Activity {
 
     private void installApk(File apk) {
         try {
-            Uri uri = FileProvider.getUriForFile(
-                    this,
-                    getPackageName() + ".fileprovider",
-                    apk);
+            Uri uri = FileProvider.getUriForFile(this, getPackageName() + ".fileprovider", apk);
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setDataAndType(uri, "application/vnd.android.package-archive");
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -181,10 +231,8 @@ public class MainActivity extends Activity {
             Toast.makeText(this, "This app has no APK download yet.", Toast.LENGTH_SHORT).show();
             return;
         }
-
         button.setEnabled(false);
         button.setText("Downloading…");
-
         new Thread(() -> {
             File apk = null;
             try {
@@ -193,28 +241,23 @@ public class MainActivity extends Activity {
                 connection.setReadTimeout(30000);
                 connection.setInstanceFollowRedirects(true);
                 connection.connect();
-                if (connection.getResponseCode() < 200 || connection.getResponseCode() >= 300) {
+                if (connection.getResponseCode() < 200 || connection.getResponseCode() >= 300)
                     throw new Exception("HTTP " + connection.getResponseCode());
-                }
 
                 File dir = new File(getCacheDir(), "apk");
                 if (!dir.exists() && !dir.mkdirs()) throw new Exception("Could not create APK cache");
                 apk = new File(dir, "gitapk-download.apk");
-
-                try (InputStream input = connection.getInputStream();
-                     FileOutputStream output = new FileOutputStream(apk)) {
+                try (InputStream input = connection.getInputStream(); FileOutputStream output = new FileOutputStream(apk)) {
                     byte[] buffer = new byte[8192];
                     int read;
                     while ((read = input.read(buffer)) != -1) output.write(buffer, 0, read);
                 }
                 connection.disconnect();
-
                 File finalApk = apk;
                 runOnUiThread(() -> {
                     button.setEnabled(true);
                     button.setText("Install");
-                    if (canInstallPackages()) installApk(finalApk);
-                    else requestInstallPermission(finalApk);
+                    if (canInstallPackages()) installApk(finalApk); else requestInstallPermission(finalApk);
                 });
             } catch (Exception e) {
                 if (apk != null) apk.delete();
@@ -229,11 +272,8 @@ public class MainActivity extends Activity {
     }
 
     private void loadCatalog() {
-        TextView loading = new TextView(this);
-        loading.setText("\nLoading catalog…");
-        loading.setTextSize(18);
+        TextView loading = bodyText("Loading catalog…");
         list.addView(loading);
-
         new Thread(() -> {
             try {
                 HttpURLConnection connection = (HttpURLConnection) new URL(CATALOG_URL).openConnection();
@@ -246,15 +286,10 @@ public class MainActivity extends Activity {
                 while ((read = input.read(buffer)) != -1) json.append(new String(buffer, 0, read));
                 input.close();
                 connection.disconnect();
-
                 catalogApps = new JSONObject(json.toString()).getJSONArray("apps");
-                runOnUiThread(() -> {
-                    if (list != null && loading.getParent() != null) {
-                        showHome();
-                    }
-                });
+                runOnUiThread(() -> showHome());
             } catch (Exception e) {
-                runOnUiThread(() -> loading.setText("\nCould not load the catalog.\n" + e.getMessage()));
+                runOnUiThread(() -> loading.setText("Could not load the catalog.\n" + e.getMessage()));
             }
         }).start();
     }
@@ -262,46 +297,42 @@ public class MainActivity extends Activity {
     private void showApps(JSONArray apps, TextView loading) {
         if (loading != null && loading.getParent() != null) list.removeView(loading);
         for (int i = 0; i < apps.length(); i++) {
-            try {
-                JSONObject app = apps.getJSONObject(i);
-                addAppCard(app);
-            } catch (Exception ignored) { }
+            try { addAppCard(apps.getJSONObject(i)); } catch (Exception ignored) { }
         }
     }
 
     private void addAppCard(JSONObject app) throws Exception {
         LinearLayout card = new LinearLayout(this);
         card.setOrientation(LinearLayout.VERTICAL);
-        card.setPadding(24, 24, 24, 24);
+        card.setPadding(24, 22, 24, 22);
+        card.setBackground(roundedBackground(color(R.color.gitapk_card), 0));
 
-        TextView name = new TextView(this);
-        name.setText(app.optString("name", "Unknown app"));
-        name.setTextSize(22);
+        TextView name = bodyText(app.optString("name", "Unknown app"));
+        name.setTextSize(21);
         name.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
+        name.setPadding(0, 0, 0, 6);
         card.addView(name);
 
-        TextView summary = new TextView(this);
-        summary.setText(app.optString("summary", ""));
+        TextView summary = bodyText(app.optString("summary", ""));
         summary.setTextSize(15);
+        summary.setPadding(0, 0, 0, 8);
         card.addView(summary);
 
-        TextView category = new TextView(this);
-        category.setText("Category: " + app.optString("category", "Other"));
-        card.addView(category);
-
-        TextView version = new TextView(this);
-        version.setText("Version " + app.optString("version", "unknown"));
-        card.addView(version);
+        TextView meta = bodyText(app.optString("category", "Other") + "  •  Version " + app.optString("version", "unknown"));
+        meta.setTextSize(14);
+        meta.setTextColor(color(R.color.gitapk_secondary_text));
+        meta.setPadding(0, 0, 0, 12);
+        card.addView(meta);
 
         Button install = new Button(this);
         install.setText("Install");
+        install.setTextSize(16);
         install.setOnClickListener(v -> downloadAndInstall(app.optString("apk", ""), install));
         card.addView(install);
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.setMargins(0, 24, 0, 0);
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.setMargins(0, 14, 0, 0);
         list.addView(card, params);
     }
 }
