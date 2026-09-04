@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "repositories": [
+    {
+      "id": "fdroid",
+      "name": "F-Droid Official",
+      "description": "The official F-Droid repository of libre Android apps.",
+      "type": "fdroid",
+      "url": "https://f-droid.org/repo",
+      "index": "https://f-droid.org/repo/index-v2.json",
+      "archiveIndex": "https://f-droid.org/archive/index-v2.json",
+      "enabled": true
+    },
+    {
+      "id": "fdroid-archive",
+      "name": "F-Droid Archive",
+      "description": "F-Droid's official archive of older app versions.",
+      "type": "fdroid",
+      "url": "https://f-droid.org/archive",
+      "index": "https://f-droid.org/archive/index-v2.json",
+      "enabled": true
+    }
+  ]
+}
