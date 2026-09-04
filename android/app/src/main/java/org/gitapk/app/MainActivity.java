@@ -1,22 +1,29 @@
 package org.gitapk.app;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Environment;
+import android.provider.Settings;
 import android.graphics.Typeface;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.core.content.FileProvider;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -25,6 +32,7 @@ public class MainActivity extends Activity {
             "https://raw.githubusercontent.com/carjam120443-netizen/Gitapk/main/catalog/catalog.json";
 
     private LinearLayout list;
+    private File pendingApk;
 
     @Override
     public void onCreate(Bundle state) {
@@ -51,6 +59,97 @@ public class MainActivity extends Activity {
         loadCatalog();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (pendingApk != null && pendingApk.exists() && canInstallPackages()) {
+            File apk = pendingApk;
+            pendingApk = null;
+            installApk(apk);
+        }
+    }
+
+    private boolean canInstallPackages() {
+        return Build.VERSION.SDK_INT < Build.VERSION_CODES.O
+                || getPackageManager().canRequestPackageInstalls();
+    }
+
+    private void requestInstallPermission(File apk) {
+        pendingApk = apk;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Intent settings = new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
+                    Uri.parse("package:" + getPackageName()));
+            startActivity(settings);
+        }
+    }
+
+    private void installApk(File apk) {
+        try {
+            Uri uri = FileProvider.getUriForFile(
+                    this,
+                    getPackageName() + ".fileprovider",
+                    apk);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setDataAndType(uri, "application/vnd.android.package-archive");
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        } catch (Exception e) {
+            Toast.makeText(this, "Could not open installer: " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void downloadAndInstall(String apkUrl, Button button) {
+        if (apkUrl == null || apkUrl.isEmpty()) {
+            Toast.makeText(this, "This app has no APK download yet.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        button.setEnabled(false);
+        button.setText("Downloading…");
+
+        new Thread(() -> {
+            File apk = null;
+            try {
+                HttpURLConnection connection = (HttpURLConnection) new URL(apkUrl).openConnection();
+                connection.setConnectTimeout(15000);
+                connection.setReadTimeout(30000);
+                connection.setInstanceFollowRedirects(true);
+                connection.connect();
+                if (connection.getResponseCode() < 200 || connection.getResponseCode() >= 300) {
+                    throw new Exception("HTTP " + connection.getResponseCode());
+                }
+
+                File dir = new File(getCacheDir(), "apk");
+                if (!dir.exists() && !dir.mkdirs()) throw new Exception("Could not create APK cache");
+                apk = new File(dir, "gitapk-download.apk");
+
+                try (InputStream input = connection.getInputStream();
+                     FileOutputStream output = new FileOutputStream(apk)) {
+                    byte[] buffer = new byte[8192];
+                    int read;
+                    while ((read = input.read(buffer)) != -1) output.write(buffer, 0, read);
+                }
+                connection.disconnect();
+
+                File finalApk = apk;
+                runOnUiThread(() -> {
+                    button.setEnabled(true);
+                    button.setText("Install");
+                    if (canInstallPackages()) installApk(finalApk);
+                    else requestInstallPermission(finalApk);
+                });
+            } catch (Exception e) {
+                if (apk != null) apk.delete();
+                String message = e.getMessage() == null ? "Download failed" : e.getMessage();
+                runOnUiThread(() -> {
+                    button.setEnabled(true);
+                    button.setText("Install");
+                    Toast.makeText(this, "Download failed: " + message, Toast.LENGTH_LONG).show();
+                });
+            }
+        }).start();
+    }
+
     private void loadCatalog() {
         TextView loading = new TextView(this);
         loading.setText("\nLoading catalog…");
@@ -62,19 +161,18 @@ public class MainActivity extends Activity {
                 HttpURLConnection connection = (HttpURLConnection) new URL(CATALOG_URL).openConnection();
                 connection.setConnectTimeout(10000);
                 connection.setReadTimeout(10000);
-                BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                InputStream input = connection.getInputStream();
                 StringBuilder json = new StringBuilder();
-                String line;
-                while ((line = reader.readLine()) != null) json.append(line);
-                reader.close();
+                byte[] buffer = new byte[4096];
+                int read;
+                while ((read = input.read(buffer)) != -1) json.append(new String(buffer, 0, read));
+                input.close();
                 connection.disconnect();
 
                 JSONArray apps = new JSONObject(json.toString()).getJSONArray("apps");
                 runOnUiThread(() -> showApps(apps, loading));
             } catch (Exception e) {
-                runOnUiThread(() -> {
-                    loading.setText("\nCould not load the catalog.\n" + e.getMessage());
-                });
+                runOnUiThread(() -> loading.setText("\nCould not load the catalog.\n" + e.getMessage()));
             }
         }).start();
     }
@@ -109,13 +207,10 @@ public class MainActivity extends Activity {
         version.setText("Version " + app.optString("version", "unknown"));
         card.addView(version);
 
-        Button download = new Button(this);
-        download.setText("View APK");
-        download.setOnClickListener(v -> {
-            String apk = app.optString("apk", "");
-            if (!apk.isEmpty()) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(apk)));
-        });
-        card.addView(download);
+        Button install = new Button(this);
+        install.setText("Install");
+        install.setOnClickListener(v -> downloadAndInstall(app.optString("apk", ""), install));
+        card.addView(install);
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
