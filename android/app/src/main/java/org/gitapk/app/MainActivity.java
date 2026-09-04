@@ -6,7 +6,6 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.Settings;
 import android.graphics.Typeface;
 import android.view.View;
@@ -26,6 +25,8 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class MainActivity extends Activity {
     private static final String CATALOG_URL =
@@ -33,29 +34,12 @@ public class MainActivity extends Activity {
 
     private LinearLayout list;
     private File pendingApk;
+    private JSONArray catalogApps;
 
     @Override
     public void onCreate(Bundle state) {
         super.onCreate(state);
-
-        ScrollView scroll = new ScrollView(this);
-        list = new LinearLayout(this);
-        list.setOrientation(LinearLayout.VERTICAL);
-        list.setPadding(32, 40, 32, 32);
-        scroll.addView(list);
-        setContentView(scroll);
-
-        TextView title = new TextView(this);
-        title.setText("GitAPK");
-        title.setTextSize(32);
-        title.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
-        list.addView(title);
-
-        TextView subtitle = new TextView(this);
-        subtitle.setText("Open-source apps from Git repositories");
-        subtitle.setTextSize(16);
-        list.addView(subtitle);
-
+        showHome();
         loadCatalog();
     }
 
@@ -66,6 +50,100 @@ public class MainActivity extends Activity {
             File apk = pendingApk;
             pendingApk = null;
             installApk(apk);
+        }
+    }
+
+    private void setupPage(String titleText, String subtitleText) {
+        ScrollView scroll = new ScrollView(this);
+        list = new LinearLayout(this);
+        list.setOrientation(LinearLayout.VERTICAL);
+        list.setPadding(32, 40, 32, 32);
+        scroll.addView(list);
+        setContentView(scroll);
+
+        TextView title = new TextView(this);
+        title.setText(titleText);
+        title.setTextSize(32);
+        title.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
+        list.addView(title);
+
+        TextView subtitle = new TextView(this);
+        subtitle.setText(subtitleText);
+        subtitle.setTextSize(16);
+        list.addView(subtitle);
+    }
+
+    private void addNavigation() {
+        LinearLayout nav = new LinearLayout(this);
+        nav.setOrientation(LinearLayout.HORIZONTAL);
+
+        Button apps = new Button(this);
+        apps.setText("Apps");
+        apps.setOnClickListener(v -> showHome());
+        nav.addView(apps, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+
+        Button categories = new Button(this);
+        categories.setText("Categories");
+        categories.setOnClickListener(v -> showCategories());
+        nav.addView(categories, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.setMargins(0, 20, 0, 20);
+        list.addView(nav, params);
+    }
+
+    private void showHome() {
+        setupPage("GitAPK", "Open-source apps from Git repositories");
+        addNavigation();
+        if (catalogApps != null) showApps(catalogApps, null);
+    }
+
+    private void showCategories() {
+        setupPage("Categories", "Browse GitAPK apps by category");
+        addNavigation();
+
+        if (catalogApps == null) {
+            TextView loading = new TextView(this);
+            loading.setText("\nLoading categories…");
+            loading.setTextSize(18);
+            list.addView(loading);
+            return;
+        }
+
+        Set<String> categories = new LinkedHashSet<>();
+        for (int i = 0; i < catalogApps.length(); i++) {
+            JSONObject app = catalogApps.optJSONObject(i);
+            if (app != null) categories.add(app.optString("category", "Other"));
+        }
+
+        for (String category : categories) {
+            Button button = new Button(this);
+            button.setText(category);
+            button.setTextSize(17);
+            button.setOnClickListener(v -> showCategory(category));
+            list.addView(button);
+        }
+    }
+
+    private void showCategory(String category) {
+        setupPage(category, "Apps in " + category);
+        addNavigation();
+
+        Button back = new Button(this);
+        back.setText("← All Categories");
+        back.setOnClickListener(v -> showCategories());
+        list.addView(back);
+
+        if (catalogApps != null) {
+            for (int i = 0; i < catalogApps.length(); i++) {
+                JSONObject app = catalogApps.optJSONObject(i);
+                if (app != null && category.equals(app.optString("category", "Other"))) {
+                    try {
+                        addAppCard(app);
+                    } catch (Exception ignored) { }
+                }
+            }
         }
     }
 
@@ -169,8 +247,12 @@ public class MainActivity extends Activity {
                 input.close();
                 connection.disconnect();
 
-                JSONArray apps = new JSONObject(json.toString()).getJSONArray("apps");
-                runOnUiThread(() -> showApps(apps, loading));
+                catalogApps = new JSONObject(json.toString()).getJSONArray("apps");
+                runOnUiThread(() -> {
+                    if (list != null && loading.getParent() != null) {
+                        showHome();
+                    }
+                });
             } catch (Exception e) {
                 runOnUiThread(() -> loading.setText("\nCould not load the catalog.\n" + e.getMessage()));
             }
@@ -178,7 +260,7 @@ public class MainActivity extends Activity {
     }
 
     private void showApps(JSONArray apps, TextView loading) {
-        list.removeView(loading);
+        if (loading != null && loading.getParent() != null) list.removeView(loading);
         for (int i = 0; i < apps.length(); i++) {
             try {
                 JSONObject app = apps.getJSONObject(i);
@@ -202,6 +284,10 @@ public class MainActivity extends Activity {
         summary.setText(app.optString("summary", ""));
         summary.setTextSize(15);
         card.addView(summary);
+
+        TextView category = new TextView(this);
+        category.setText("Category: " + app.optString("category", "Other"));
+        card.addView(category);
 
         TextView version = new TextView(this);
         version.setText("Version " + app.optString("version", "unknown"));
