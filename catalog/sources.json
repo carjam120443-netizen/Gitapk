@@ -79,6 +79,30 @@
       "category": "Productivity",
       "license": "GPL-3.0-or-later",
       "repository": "gsantner/markor"
+    },
+    {
+      "id": "com.github.libretube",
+      "name": "LibreTube",
+      "summary": "A privacy-focused alternative frontend for YouTube.",
+      "category": "Video",
+      "license": "GPL-3.0-or-later",
+      "repository": "libre-tube/LibreTube"
+    },
+    {
+      "id": "org.quantumbadger.redreader",
+      "name": "RedReader",
+      "summary": "A lightweight, open-source Reddit client for Android.",
+      "category": "Social",
+      "license": "GPL-3.0-or-later",
+      "repository": "QuantumBadger/RedReader"
+    },
+    {
+      "id": "free.rm.skytube.oss",
+      "name": "SkyTube",
+      "summary": "An ad-free, open-source YouTube client for Android.",
+      "category": "Video",
+      "license": "GPL-3.0",
+      "repository": "SkyTubeTeam/SkyTube"
     }
   ]
 }
