@@ -1,0 +1,14 @@
+{
+  "id": "com.github.libretube",
+  "name": "LibreTube",
+  "summary": "A privacy-focused alternative frontend for YouTube.",
+  "description": "A privacy-focused alternative frontend for YouTube.",
+  "category": "Video",
+  "license": "GPL-3.0-or-later",
+  "version": "v32.1",
+  "apk": "https://github.com/libre-tube/LibreTube/releases/download/v32.1/app-release.apk",
+  "sha256": "437dbb55540ac573f864938fc3595f69fc13df5d568b237aded9935559fe1353",
+  "repository": "https://github.com/libre-tube/LibreTube",
+  "release": "https://github.com/libre-tube/LibreTube/releases/tag/v32.1",
+  "sourceType": "github"
+}

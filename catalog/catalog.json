@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T22:14:06.654337+00:00",
+  "generatedAt": "2026-09-04T22:23:06.569940+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -59,6 +59,20 @@
       "sourceType": "github"
     },
     {
+      "id": "com.github.libretube",
+      "name": "LibreTube",
+      "summary": "A privacy-focused alternative frontend for YouTube.",
+      "description": "A privacy-focused alternative frontend for YouTube.",
+      "category": "Video",
+      "license": "GPL-3.0-or-later",
+      "version": "v32.1",
+      "apk": "https://github.com/libre-tube/LibreTube/releases/download/v32.1/app-release.apk",
+      "sha256": "437dbb55540ac573f864938fc3595f69fc13df5d568b237aded9935559fe1353",
+      "repository": "https://github.com/libre-tube/LibreTube",
+      "release": "https://github.com/libre-tube/LibreTube/releases/tag/v32.1",
+      "sourceType": "github"
+    },
+    {
       "id": "markor",
       "name": "Markor",
       "summary": "A lightweight open-source text editor and Markdown notebook.",
@@ -112,6 +126,34 @@
       "sha256": "300ad91ccc92f3e279f219432844c2c18f5f6c2c530eeeffe46c32acfb938b66",
       "repository": "https://github.com/ImranR98/Obtainium",
       "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.6.14",
+      "sourceType": "github"
+    },
+    {
+      "id": "org.quantumbadger.redreader",
+      "name": "RedReader",
+      "summary": "A lightweight, open-source Reddit client for Android.",
+      "description": "A lightweight, open-source Reddit client for Android.",
+      "category": "Social",
+      "license": "GPL-3.0-or-later",
+      "version": "v1.26",
+      "apk": "https://github.com/QuantumBadger/RedReader/releases/download/v1.26/RedReader-v1.26.apk",
+      "sha256": "63e67526caab5f3f5efcb604e17e3664470670580590749c875cb6ca0a047e1c",
+      "repository": "https://github.com/QuantumBadger/RedReader",
+      "release": "https://github.com/QuantumBadger/RedReader/releases/tag/v1.26",
+      "sourceType": "github"
+    },
+    {
+      "id": "free.rm.skytube.oss",
+      "name": "SkyTube",
+      "summary": "An ad-free, open-source YouTube client for Android.",
+      "description": "An ad-free, open-source YouTube client for Android.",
+      "category": "Video",
+      "license": "GPL-3.0",
+      "version": "v2.999",
+      "apk": "https://github.com/SkyTubeTeam/SkyTube/releases/download/v2.999/SkyTube-Extra-2.999.apk",
+      "sha256": "20b2d6420c4c51591b926160180847094344ecc0bf9b49b10ea38fb80fdb7fc1",
+      "repository": "https://github.com/SkyTubeTeam/SkyTube",
+      "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v2.999",
       "sourceType": "github"
     }
   ]
