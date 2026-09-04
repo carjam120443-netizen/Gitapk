@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="gitapk_icon_background">#24292F</color>
+    <color name="gitapk_surface">#F7F8FA</color>
+    <color name="gitapk_card">#FFFFFF</color>
+    <color name="gitapk_text">#17191C</color>
+    <color name="gitapk_secondary_text">#626A73</color>
 </resources>
