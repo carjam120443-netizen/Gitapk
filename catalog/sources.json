@@ -31,6 +31,54 @@
       "category": "Utilities",
       "license": "Apache-2.0",
       "repository": "zhanghai/MaterialFiles"
+    },
+    {
+      "id": "obtainium",
+      "name": "Obtainium",
+      "summary": "Get Android app updates directly from their source releases.",
+      "category": "Utilities",
+      "license": "GPL-3.0",
+      "repository": "ImranR98/Obtainium"
+    },
+    {
+      "id": "fossify-gallery",
+      "name": "Fossify Gallery",
+      "summary": "A private, open-source photo and video gallery.",
+      "category": "Photography",
+      "license": "Apache-2.0",
+      "repository": "FossifyOrg/Gallery"
+    },
+    {
+      "id": "fossify-file-manager",
+      "name": "Fossify File Manager",
+      "summary": "A simple open-source file manager with privacy in mind.",
+      "category": "Utilities",
+      "license": "Apache-2.0",
+      "repository": "FossifyOrg/File-Manager"
+    },
+    {
+      "id": "breezy-weather",
+      "name": "Breezy Weather",
+      "summary": "A privacy-friendly open-source weather app.",
+      "category": "Weather",
+      "license": "GPL-3.0-or-later",
+      "repository": "breezy-weather/breezy-weather"
+    },
+    {
+      "id": "k9mail",
+      "name": "K-9 Mail",
+      "summary": "An open-source email client for Android.",
+      "category": "Communication",
+      "license": "Apache-2.0",
+      "repository": "thunderbird/thunderbird-android"
+    },
+    {
+      "id": "markor",
+      "name": "Markor",
+      "summary": "A lightweight open-source text editor and Markdown notebook.",
+      "category": "Productivity",
+      "license": "GPL-3.0-or-later",
+      "repository": "gsantner/markor"
     }
   ]
 }
