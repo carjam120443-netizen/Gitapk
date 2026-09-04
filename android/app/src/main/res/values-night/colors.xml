@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gitapk_surface">#101214</color>
+    <color name="gitapk_card">#1B1F23</color>
+    <color name="gitapk_text">#F2F4F6</color>
+    <color name="gitapk_secondary_text">#A8B0B8</color>
+</resources>
