@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="GitAPK icon">
+  <rect width="108" height="108" rx="22" fill="#24292F"/>
+  <path fill="#fff" d="M31 35 54 22l23 13v35L54 83 31 70Z"/>
+  <path fill="#24292F" d="M54 22v30L31 65V35Z"/>
+  <path fill="#5EEAD4" d="M54 22l23 13v35L54 83V52Z"/>
+  <path d="M54 52v15m0-9 13-8" fill="none" stroke="#24292F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path fill="#fff" d="M49 62h10v10H49zM62 45h10v10H62z"/>
+</svg>
