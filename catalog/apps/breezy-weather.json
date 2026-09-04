@@ -1,0 +1,14 @@
+{
+  "id": "breezy-weather",
+  "name": "Breezy Weather",
+  "summary": "A privacy-friendly open-source weather app.",
+  "description": "A privacy-friendly open-source weather app.",
+  "category": "Weather",
+  "license": "GPL-3.0-or-later",
+  "version": "v6.2.2",
+  "apk": "https://github.com/breezy-weather/breezy-weather/releases/download/v6.2.2/breezy-weather-arm64-v8a-v6.2.2_standard.apk",
+  "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
+  "repository": "https://github.com/breezy-weather/breezy-weather",
+  "release": "https://github.com/breezy-weather/breezy-weather/releases/tag/v6.2.2",
+  "sourceType": "github"
+}

@@ -1,7 +1,77 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T21:53:56.726483+00:00",
+  "generatedAt": "2026-09-04T22:14:06.654337+00:00",
   "apps": [
+    {
+      "id": "breezy-weather",
+      "name": "Breezy Weather",
+      "summary": "A privacy-friendly open-source weather app.",
+      "description": "A privacy-friendly open-source weather app.",
+      "category": "Weather",
+      "license": "GPL-3.0-or-later",
+      "version": "v6.2.2",
+      "apk": "https://github.com/breezy-weather/breezy-weather/releases/download/v6.2.2/breezy-weather-arm64-v8a-v6.2.2_standard.apk",
+      "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
+      "repository": "https://github.com/breezy-weather/breezy-weather",
+      "release": "https://github.com/breezy-weather/breezy-weather/releases/tag/v6.2.2",
+      "sourceType": "github"
+    },
+    {
+      "id": "fossify-file-manager",
+      "name": "Fossify File Manager",
+      "summary": "A simple open-source file manager with privacy in mind.",
+      "description": "A simple open-source file manager with privacy in mind.",
+      "category": "Utilities",
+      "license": "Apache-2.0",
+      "version": "1.6.1",
+      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.1/file-manager-13-foss-release.apk",
+      "sha256": "9e97d2faf55fb2702386c3dc51e38a6b073781016b125701d3ab668419a70008",
+      "repository": "https://github.com/FossifyOrg/File-Manager",
+      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.1",
+      "sourceType": "github"
+    },
+    {
+      "id": "fossify-gallery",
+      "name": "Fossify Gallery",
+      "summary": "A private, open-source photo and video gallery.",
+      "description": "A private, open-source photo and video gallery.",
+      "category": "Photography",
+      "license": "Apache-2.0",
+      "version": "1.13.1",
+      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.13.1/gallery-28-foss-release.apk",
+      "sha256": "ae7e699599e81f70e2b82626bb1dfa883fe096cd938387133e123c116e5641d9",
+      "repository": "https://github.com/FossifyOrg/Gallery",
+      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.13.1",
+      "sourceType": "github"
+    },
+    {
+      "id": "k9mail",
+      "name": "K-9 Mail",
+      "summary": "An open-source email client for Android.",
+      "description": "An open-source email client for Android.",
+      "category": "Communication",
+      "license": "Apache-2.0",
+      "version": "THUNDERBIRD_22_0",
+      "apk": "https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_22_0/thunderbird-22.0.apk",
+      "sha256": "4a1875bb1cf4293c468048e56a91d16818653f7d6e646642dff7486dfbf0732d",
+      "repository": "https://github.com/thunderbird/thunderbird-android",
+      "release": "https://github.com/thunderbird/thunderbird-android/releases/tag/THUNDERBIRD_22_0",
+      "sourceType": "github"
+    },
+    {
+      "id": "markor",
+      "name": "Markor",
+      "summary": "A lightweight open-source text editor and Markdown notebook.",
+      "description": "A lightweight open-source text editor and Markdown notebook.",
+      "category": "Productivity",
+      "license": "GPL-3.0-or-later",
+      "version": "v2.16.1",
+      "apk": "https://github.com/gsantner/markor/releases/download/v2.16.1/net.gsantner.markor-v163-2.16.1-flavorDefault-release.apk",
+      "sha256": "e88cdcced7aa3dca25e6b9c7a9bdcfad3e3988ee545be951f42bf9441b5e46bf",
+      "repository": "https://github.com/gsantner/markor",
+      "release": "https://github.com/gsantner/markor/releases/tag/v2.16.1",
+      "sourceType": "github"
+    },
     {
       "id": "com.zhanghai.android.files",
       "name": "Material Files",
@@ -28,6 +98,20 @@
       "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
       "repository": "https://github.com/TeamNewPipe/NewPipe",
       "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+      "sourceType": "github"
+    },
+    {
+      "id": "obtainium",
+      "name": "Obtainium",
+      "summary": "Get Android app updates directly from their source releases.",
+      "description": "Get Android app updates directly from their source releases.",
+      "category": "Utilities",
+      "license": "GPL-3.0",
+      "version": "v1.6.14",
+      "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.14/app-arm64-v8a-fdroid-release.apk",
+      "sha256": "300ad91ccc92f3e279f219432844c2c18f5f6c2c530eeeffe46c32acfb938b66",
+      "repository": "https://github.com/ImranR98/Obtainium",
+      "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.6.14",
       "sourceType": "github"
     }
   ]

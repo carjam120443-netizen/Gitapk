@@ -1,0 +1,14 @@
+{
+  "id": "obtainium",
+  "name": "Obtainium",
+  "summary": "Get Android app updates directly from their source releases.",
+  "description": "Get Android app updates directly from their source releases.",
+  "category": "Utilities",
+  "license": "GPL-3.0",
+  "version": "v1.6.14",
+  "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.14/app-arm64-v8a-fdroid-release.apk",
+  "sha256": "300ad91ccc92f3e279f219432844c2c18f5f6c2c530eeeffe46c32acfb938b66",
+  "repository": "https://github.com/ImranR98/Obtainium",
+  "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.6.14",
+  "sourceType": "github"
+}

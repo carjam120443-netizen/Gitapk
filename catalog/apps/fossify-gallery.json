@@ -1,0 +1,14 @@
+{
+  "id": "fossify-gallery",
+  "name": "Fossify Gallery",
+  "summary": "A private, open-source photo and video gallery.",
+  "description": "A private, open-source photo and video gallery.",
+  "category": "Photography",
+  "license": "Apache-2.0",
+  "version": "1.13.1",
+  "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.13.1/gallery-28-foss-release.apk",
+  "sha256": "ae7e699599e81f70e2b82626bb1dfa883fe096cd938387133e123c116e5641d9",
+  "repository": "https://github.com/FossifyOrg/Gallery",
+  "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.13.1",
+  "sourceType": "github"
+}

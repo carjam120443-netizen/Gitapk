@@ -1,0 +1,14 @@
+{
+  "id": "markor",
+  "name": "Markor",
+  "summary": "A lightweight open-source text editor and Markdown notebook.",
+  "description": "A lightweight open-source text editor and Markdown notebook.",
+  "category": "Productivity",
+  "license": "GPL-3.0-or-later",
+  "version": "v2.16.1",
+  "apk": "https://github.com/gsantner/markor/releases/download/v2.16.1/net.gsantner.markor-v163-2.16.1-flavorDefault-release.apk",
+  "sha256": "e88cdcced7aa3dca25e6b9c7a9bdcfad3e3988ee545be951f42bf9441b5e46bf",
+  "repository": "https://github.com/gsantner/markor",
+  "release": "https://github.com/gsantner/markor/releases/tag/v2.16.1",
+  "sourceType": "github"
+}

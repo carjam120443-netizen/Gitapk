@@ -1,0 +1,14 @@
+{
+  "id": "k9mail",
+  "name": "K-9 Mail",
+  "summary": "An open-source email client for Android.",
+  "description": "An open-source email client for Android.",
+  "category": "Communication",
+  "license": "Apache-2.0",
+  "version": "THUNDERBIRD_22_0",
+  "apk": "https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_22_0/thunderbird-22.0.apk",
+  "sha256": "4a1875bb1cf4293c468048e56a91d16818653f7d6e646642dff7486dfbf0732d",
+  "repository": "https://github.com/thunderbird/thunderbird-android",
+  "release": "https://github.com/thunderbird/thunderbird-android/releases/tag/THUNDERBIRD_22_0",
+  "sourceType": "github"
+}
