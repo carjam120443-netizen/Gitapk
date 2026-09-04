@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-04T00:00:00Z",
+  "apps": [
+    {
+      "id": "org.gitapk.example",
+      "name": "GitAPK Example",
+      "summary": "Example catalog entry",
+      "category": "Utilities",
+      "version": "0.1.0",
+      "apk": "https://github.com/carjam120443-netizen/Gitapk/releases/download/example/GitAPK-example.apk",
+      "sha256": ""
+    }
+  ]
+}
