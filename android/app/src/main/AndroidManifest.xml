@@ -6,6 +6,8 @@
     <application
         android:theme="@style/AppTheme"
         android:label="GitAPK"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:allowBackup="true"
         android:supportsRtl="true">
         <activity
