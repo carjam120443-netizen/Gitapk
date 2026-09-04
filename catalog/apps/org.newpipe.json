@@ -1,0 +1,14 @@
+{
+  "id": "org.newpipe",
+  "name": "NewPipe",
+  "summary": "A lightweight YouTube client for Android.",
+  "description": "A lightweight YouTube client for Android.",
+  "category": "Video",
+  "license": "GPL-3.0-or-later",
+  "version": "v0.29.1",
+  "apk": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
+  "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
+  "repository": "https://github.com/TeamNewPipe/NewPipe",
+  "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+  "sourceType": "github"
+}

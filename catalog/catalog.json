@@ -1,15 +1,34 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T00:00:00Z",
+  "generatedAt": "2026-09-04T21:53:56.726483+00:00",
   "apps": [
     {
-      "id": "org.gitapk.example",
-      "name": "GitAPK Example",
-      "summary": "Example catalog entry",
+      "id": "com.zhanghai.android.files",
+      "name": "Material Files",
+      "summary": "An open-source file manager with a Material Design interface.",
+      "description": "An open-source file manager with a Material Design interface.",
       "category": "Utilities",
-      "version": "0.1.0",
-      "apk": "https://github.com/carjam120443-netizen/Gitapk/releases/download/example/GitAPK-example.apk",
-      "sha256": ""
+      "license": "Apache-2.0",
+      "version": "v1.7.4",
+      "apk": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.4/app-release-universal.apk",
+      "sha256": "c375592402fa62249ba3114e313efacb11399ebdb2f94f8663c34e828efea1c1",
+      "repository": "https://github.com/zhanghai/MaterialFiles",
+      "release": "https://github.com/zhanghai/MaterialFiles/releases/tag/v1.7.4",
+      "sourceType": "github"
+    },
+    {
+      "id": "org.newpipe",
+      "name": "NewPipe",
+      "summary": "A lightweight YouTube client for Android.",
+      "description": "A lightweight YouTube client for Android.",
+      "category": "Video",
+      "license": "GPL-3.0-or-later",
+      "version": "v0.29.1",
+      "apk": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
+      "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
+      "repository": "https://github.com/TeamNewPipe/NewPipe",
+      "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+      "sourceType": "github"
     }
   ]
 }

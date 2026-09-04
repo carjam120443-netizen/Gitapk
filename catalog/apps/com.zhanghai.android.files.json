@@ -1,0 +1,14 @@
+{
+  "id": "com.zhanghai.android.files",
+  "name": "Material Files",
+  "summary": "An open-source file manager with a Material Design interface.",
+  "description": "An open-source file manager with a Material Design interface.",
+  "category": "Utilities",
+  "license": "Apache-2.0",
+  "version": "v1.7.4",
+  "apk": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.4/app-release-universal.apk",
+  "sha256": "c375592402fa62249ba3114e313efacb11399ebdb2f94f8663c34e828efea1c1",
+  "repository": "https://github.com/zhanghai/MaterialFiles",
+  "release": "https://github.com/zhanghai/MaterialFiles/releases/tag/v1.7.4",
+  "sourceType": "github"
+}
