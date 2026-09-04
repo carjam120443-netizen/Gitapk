@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "id": "org.newpipe",
+      "name": "NewPipe",
+      "summary": "A lightweight YouTube client for Android.",
+      "category": "Video",
+      "license": "GPL-3.0-or-later",
+      "repository": "TeamNewPipe/NewPipe"
+    },
+    {
+      "id": "com.itsaky.androidide",
+      "name": "AndroidIDE",
+      "summary": "An IDE for building Android apps directly on Android.",
+      "category": "Development",
+      "license": "GPL-3.0",
+      "repository": "AndroidIDEOfficial/AndroidIDE"
+    },
+    {
+      "id": "antennapod",
+      "name": "AntennaPod",
+      "summary": "An open-source podcast manager for Android.",
+      "category": "Audio",
+      "license": "GPL-3.0-or-later",
+      "repository": "AntennaPod/AntennaPod"
+    },
+    {
+      "id": "com.zhanghai.android.files",
+      "name": "Material Files",
+      "summary": "An open-source file manager with a Material Design interface.",
+      "category": "Utilities",
+      "license": "Apache-2.0",
+      "repository": "zhanghai/MaterialFiles"
+    }
+  ]
+}
