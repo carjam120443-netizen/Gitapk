@@ -9,6 +9,6 @@
     <path android:fillColor="#24292F" android:pathData="M54,22 L54,52 L31,65 L31,35 Z" />
     <path android:fillColor="#5EEAD4" android:pathData="M54,22 L77,35 L77,70 L54,83 L54,52 Z" />
     <path android:strokeColor="#24292F" android:strokeWidth="4" android:strokeLineCap="round" android:fillColor="@android:color/transparent" android:pathData="M54,52 L54,67 M54,58 L67,50" />
-    <circle android:fillColor="#FFFFFF" android:cx="54" android:cy="67" android:radius="5" />
-    <circle android:fillColor="#FFFFFF" android:cx="67" android:cy="50" android:radius="5" />
+    <path android:fillColor="#FFFFFF" android:pathData="M49,62 L59,62 L59,72 L49,72 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M62,45 L72,45 L72,55 L62,55 Z" />
 </vector>
