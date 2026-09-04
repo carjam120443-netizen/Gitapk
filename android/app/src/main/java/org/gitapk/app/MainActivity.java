@@ -9,7 +9,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -145,7 +144,7 @@ public class MainActivity extends Activity {
         LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 58);
         p.setMargins(0, 10, 0, 10);
-        list.addView(button, p);
+        button.setLayoutParams(p);
         return button;
     }
 
@@ -158,8 +157,7 @@ public class MainActivity extends Activity {
         setupPage("Categories", "Find apps by what they do");
 
         if (catalogApps == null) {
-            TextView loading = bodyText("Loading categories…");
-            list.addView(loading);
+            list.addView(bodyText("Loading categories…"));
             return;
         }
 
@@ -172,6 +170,7 @@ public class MainActivity extends Activity {
         for (String category : categories) {
             Button button = menuButton("›  " + category);
             button.setOnClickListener(v -> showCategory(category));
+            list.addView(button);
         }
     }
 
@@ -180,6 +179,7 @@ public class MainActivity extends Activity {
 
         Button back = menuButton("‹  All Categories");
         back.setOnClickListener(v -> showCategories());
+        list.addView(back);
 
         if (catalogApps != null) {
             for (int i = 0; i < catalogApps.length(); i++) {
