@@ -1,6 +1,10 @@
 # GitAPK
 
-A Git-powered open-source Android app store. 📦📱
+<p align="center">
+  <img src="docs/gitapk-icon.svg" alt="GitAPK icon" width="128">
+</p>
+
+<p align="center"><strong>A Git-powered open-source Android app store.</strong> 📦📱</p>
 
 GitAPK builds an Android app catalog from public Git repositories and their release artifacts. The catalog is separate from the Android client, so adding or updating an app does not require publishing a new client release.
 
@@ -12,6 +16,16 @@ GitAPK builds an Android app catalog from public Git repositories and their rele
 - `catalog/sources.json` — repositories tracked by the catalog updater
 - `scripts/` — catalog/update tooling
 - `.github/workflows/` — Android builds, validation, and automatic catalog updates
+
+## Android client UI
+
+The client includes a simple app browser with:
+
+- ☰ Three-line menu for quick navigation
+- 🗂️ Category browsing
+- 🌙 Dark mode toggle
+- 📦 Cleaner app cards with version and category information
+- 📱 One-tap APK download and Android installation handoff
 
 ## Installing apps
 
