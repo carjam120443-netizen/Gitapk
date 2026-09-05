@@ -1,124 +1,24 @@
 {
   "sources": [
-    {
-      "id": "org.newpipe",
-      "name": "NewPipe",
-      "summary": "A lightweight YouTube client for Android.",
-      "category": "Video",
-      "license": "GPL-3.0-or-later",
-      "repository": "TeamNewPipe/NewPipe"
-    },
-    {
-      "id": "com.itsaky.androidide",
-      "name": "AndroidIDE",
-      "summary": "An IDE for building Android apps directly on Android.",
-      "category": "Development",
-      "license": "GPL-3.0",
-      "repository": "AndroidIDEOfficial/AndroidIDE"
-    },
-    {
-      "id": "antennapod",
-      "name": "AntennaPod",
-      "summary": "An open-source podcast manager for Android.",
-      "category": "Audio",
-      "license": "GPL-3.0-or-later",
-      "repository": "AntennaPod/AntennaPod"
-    },
-    {
-      "id": "com.zhanghai.android.files",
-      "name": "Material Files",
-      "summary": "An open-source file manager with a Material Design interface.",
-      "category": "Utilities",
-      "license": "Apache-2.0",
-      "repository": "zhanghai/MaterialFiles"
-    },
-    {
-      "id": "obtainium",
-      "name": "Obtainium",
-      "summary": "Get Android app updates directly from their source releases.",
-      "category": "Utilities",
-      "license": "GPL-3.0",
-      "repository": "ImranR98/Obtainium"
-    },
-    {
-      "id": "fossify-gallery",
-      "name": "Fossify Gallery",
-      "summary": "A private, open-source photo and video gallery.",
-      "category": "Photography",
-      "license": "Apache-2.0",
-      "repository": "FossifyOrg/Gallery"
-    },
-    {
-      "id": "fossify-file-manager",
-      "name": "Fossify File Manager",
-      "summary": "A simple open-source file manager with privacy in mind.",
-      "category": "Utilities",
-      "license": "Apache-2.0",
-      "repository": "FossifyOrg/File-Manager"
-    },
-    {
-      "id": "breezy-weather",
-      "name": "Breezy Weather",
-      "summary": "A privacy-friendly open-source weather app.",
-      "category": "Weather",
-      "license": "GPL-3.0-or-later",
-      "repository": "breezy-weather/breezy-weather"
-    },
-    {
-      "id": "k9mail",
-      "name": "K-9 Mail",
-      "summary": "An open-source email client for Android.",
-      "category": "Communication",
-      "license": "Apache-2.0",
-      "repository": "thunderbird/thunderbird-android"
-    },
-    {
-      "id": "markor",
-      "name": "Markor",
-      "summary": "A lightweight open-source text editor and Markdown notebook.",
-      "category": "Productivity",
-      "license": "GPL-3.0-or-later",
-      "repository": "gsantner/markor"
-    },
-    {
-      "id": "com.github.libretube",
-      "name": "LibreTube",
-      "summary": "A privacy-focused alternative frontend for YouTube.",
-      "category": "Video",
-      "license": "GPL-3.0-or-later",
-      "repository": "libre-tube/LibreTube"
-    },
-    {
-      "id": "org.quantumbadger.redreader",
-      "name": "RedReader",
-      "summary": "A lightweight, open-source Reddit client for Android.",
-      "category": "Social",
-      "license": "GPL-3.0-or-later",
-      "repository": "QuantumBadger/RedReader"
-    },
-    {
-      "id": "free.rm.skytube.oss",
-      "name": "SkyTube",
-      "summary": "An ad-free, open-source YouTube client for Android.",
-      "category": "Video",
-      "license": "GPL-3.0",
-      "repository": "SkyTubeTeam/SkyTube"
-    },
-    {
-      "id": "com.professor.zerion",
-      "name": "Zerion",
-      "summary": "An open-source private messenger with post-quantum encryption.",
-      "category": "Communication",
-      "license": "GPL-3.0",
-      "repository": "zerionproject/Zerion"
-    },
-    {
-      "id": "co.hermesdispatch.app",
-      "name": "Hermes Dispatch",
-      "summary": "An open-source Android client for self-hosted Hermes agents.",
-      "category": "Productivity",
-      "license": "GPL-3.0",
-      "repository": "adebnar/hermes-dispatch-android"
-    }
+    {"id":"org.newpipe","name":"NewPipe","summary":"A lightweight YouTube client for Android.","category":"Video","license":"GPL-3.0-or-later","repository":"TeamNewPipe/NewPipe"},
+    {"id":"com.itsaky.androidide","name":"AndroidIDE","summary":"An IDE for building Android apps directly on Android.","category":"Development","license":"GPL-3.0","repository":"AndroidIDEOfficial/AndroidIDE"},
+    {"id":"antennapod","name":"AntennaPod","summary":"An open-source podcast manager for Android.","category":"Audio","license":"GPL-3.0-or-later","repository":"AntennaPod/AntennaPod"},
+    {"id":"com.zhanghai.android.files","name":"Material Files","summary":"An open-source file manager with a Material Design interface.","category":"Utilities","license":"Apache-2.0","repository":"zhanghai/MaterialFiles"},
+    {"id":"obtainium","name":"Obtainium","summary":"Get Android app updates directly from their source releases.","category":"Utilities","license":"GPL-3.0","repository":"ImranR98/Obtainium"},
+    {"id":"fossify-gallery","name":"Fossify Gallery","summary":"A private, open-source photo and video gallery.","category":"Photography","license":"Apache-2.0","repository":"FossifyOrg/Gallery"},
+    {"id":"fossify-file-manager","name":"Fossify File Manager","summary":"A simple open-source file manager with privacy in mind.","category":"Utilities","license":"Apache-2.0","repository":"FossifyOrg/File-Manager"},
+    {"id":"breezy-weather","name":"Breezy Weather","summary":"A privacy-friendly open-source weather app.","category":"Weather","license":"GPL-3.0-or-later","repository":"breezy-weather/breezy-weather"},
+    {"id":"k9mail","name":"K-9 Mail","summary":"An open-source email client for Android.","category":"Communication","license":"Apache-2.0","repository":"thunderbird/thunderbird-android"},
+    {"id":"markor","name":"Markor","summary":"A lightweight open-source text editor and Markdown notebook.","category":"Productivity","license":"GPL-3.0-or-later","repository":"gsantner/markor"},
+    {"id":"com.github.libretube","name":"LibreTube","summary":"A privacy-focused alternative frontend for YouTube.","category":"Video","license":"GPL-3.0-or-later","repository":"libre-tube/LibreTube"},
+    {"id":"org.quantumbadger.redreader","name":"RedReader","summary":"A lightweight, open-source Reddit client for Android.","category":"Social","license":"GPL-3.0-or-later","repository":"QuantumBadger/RedReader"},
+    {"id":"free.rm.skytube.oss","name":"SkyTube","summary":"An ad-free, open-source YouTube client for Android.","category":"Video","license":"GPL-3.0","repository":"SkyTubeTeam/SkyTube"},
+    {"id":"com.professor.zerion","name":"Zerion","summary":"An open-source private messenger with post-quantum encryption.","category":"Communication","license":"GPL-3.0","repository":"zerionproject/Zerion"},
+    {"id":"co.hermesdispatch.app","name":"Hermes Dispatch","summary":"An open-source Android client for self-hosted Hermes agents.","category":"Productivity","license":"GPL-3.0","repository":"adebnar/hermes-dispatch-android"},
+    {"id":"com.termux","name":"Termux","summary":"A terminal and Linux environment for Android.","category":"Development","license":"GPL-3.0-or-later","repository":"termux/termux-app"},
+    {"id":"org.kde.kdeconnect_tp","name":"KDE Connect","summary":"Connect Android with your desktop for file sharing, notifications, and remote controls.","category":"Utilities","license":"GPL-2.0-or-later","repository":"KDE/kdeconnect-android"},
+    {"id":"org.videolan.vlc","name":"VLC for Android","summary":"A free and open-source multimedia player for Android.","category":"Video","license":"GPL-2.0-or-later","repository":"videolan/vlc-android"},
+    {"id":"org.mozilla.firefox","name":"Firefox for Android","summary":"Mozilla's open-source Firefox browser for Android.","category":"Communication","license":"MPL-2.0","repository":"mozilla-mobile/firefox-android"},
+    {"id":"org.fdroid.fdroid","name":"F-Droid Client","summary":"The open-source F-Droid client for browsing and installing free software apps.","category":"Utilities","license":"GPL-3.0-or-later","repository":"f-droid/fdroidclient"}
   ]
 }
