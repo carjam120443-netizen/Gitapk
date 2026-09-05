@@ -19,6 +19,24 @@
       "url": "https://f-droid.org/archive",
       "index": "https://f-droid.org/archive/index-v2.json",
       "enabled": true
+    },
+    {
+      "id": "futo",
+      "name": "FUTO F-Droid Repo",
+      "description": "FOSS apps created by FUTO.",
+      "type": "fdroid",
+      "url": "https://app.futo.org/fdroid/repo",
+      "index": "https://app.futo.org/fdroid/repo/index-v2.json",
+      "enabled": true
+    },
+    {
+      "id": "fedilab",
+      "name": "Fedilab Apps",
+      "description": "F-Droid repository for Fedilab-related apps.",
+      "type": "fdroid",
+      "url": "https://fdroid.fedilab.app/repo",
+      "index": "https://fdroid.fedilab.app/repo/index-v2.json",
+      "enabled": true
     }
   ]
 }
