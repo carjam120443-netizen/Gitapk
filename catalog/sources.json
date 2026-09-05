@@ -103,6 +103,22 @@
       "category": "Video",
       "license": "GPL-3.0",
       "repository": "SkyTubeTeam/SkyTube"
+    },
+    {
+      "id": "com.professor.zerion",
+      "name": "Zerion",
+      "summary": "An open-source private messenger with post-quantum encryption.",
+      "category": "Communication",
+      "license": "GPL-3.0",
+      "repository": "zerionproject/Zerion"
+    },
+    {
+      "id": "co.hermesdispatch.app",
+      "name": "Hermes Dispatch",
+      "summary": "An open-source Android client for self-hosted Hermes agents.",
+      "category": "Productivity",
+      "license": "GPL-3.0",
+      "repository": "adebnar/hermes-dispatch-android"
     }
   ]
 }
