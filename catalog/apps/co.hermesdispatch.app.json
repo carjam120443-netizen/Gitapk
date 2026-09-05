@@ -1,0 +1,14 @@
+{
+  "id": "co.hermesdispatch.app",
+  "name": "Hermes Dispatch",
+  "summary": "An open-source Android client for self-hosted Hermes agents.",
+  "description": "An open-source Android client for self-hosted Hermes agents.",
+  "category": "Productivity",
+  "license": "GPL-3.0",
+  "version": "v0.7.7",
+  "apk": "https://github.com/adebnar/hermes-dispatch-android/releases/download/v0.7.7/hermes-dispatch-oss.apk",
+  "sha256": "a7f5e9b8c67067366c1fa86756704fbb9f9ad5a70b7397b30aa385deb1870c6d",
+  "repository": "https://github.com/adebnar/hermes-dispatch-android",
+  "release": "https://github.com/adebnar/hermes-dispatch-android/releases/tag/v0.7.7",
+  "sourceType": "github"
+}

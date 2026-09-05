@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T08:21:56.242809+00:00",
+  "generatedAt": "2026-09-05T12:49:45.804985+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -42,6 +42,20 @@
       "sha256": "ae7e699599e81f70e2b82626bb1dfa883fe096cd938387133e123c116e5641d9",
       "repository": "https://github.com/FossifyOrg/Gallery",
       "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.13.1",
+      "sourceType": "github"
+    },
+    {
+      "id": "co.hermesdispatch.app",
+      "name": "Hermes Dispatch",
+      "summary": "An open-source Android client for self-hosted Hermes agents.",
+      "description": "An open-source Android client for self-hosted Hermes agents.",
+      "category": "Productivity",
+      "license": "GPL-3.0",
+      "version": "v0.7.7",
+      "apk": "https://github.com/adebnar/hermes-dispatch-android/releases/download/v0.7.7/hermes-dispatch-oss.apk",
+      "sha256": "a7f5e9b8c67067366c1fa86756704fbb9f9ad5a70b7397b30aa385deb1870c6d",
+      "repository": "https://github.com/adebnar/hermes-dispatch-android",
+      "release": "https://github.com/adebnar/hermes-dispatch-android/releases/tag/v0.7.7",
       "sourceType": "github"
     },
     {
@@ -154,6 +168,20 @@
       "sha256": "20b2d6420c4c51591b926160180847094344ecc0bf9b49b10ea38fb80fdb7fc1",
       "repository": "https://github.com/SkyTubeTeam/SkyTube",
       "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v2.999",
+      "sourceType": "github"
+    },
+    {
+      "id": "com.professor.zerion",
+      "name": "Zerion",
+      "summary": "An open-source private messenger with post-quantum encryption.",
+      "description": "An open-source private messenger with post-quantum encryption.",
+      "category": "Communication",
+      "license": "GPL-3.0",
+      "version": "v3.0.6",
+      "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.6/zerion-3.0.6.apk",
+      "sha256": "e3ab6d4d13f9d80fc5e1bb61e0381b131a01df01e8c41f0d0020e9da6f231822",
+      "repository": "https://github.com/zerionproject/Zerion",
+      "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.6",
       "sourceType": "github"
     }
   ]
