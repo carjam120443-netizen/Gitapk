@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "apkmirror",
+      "name": "APKMirror",
+      "type": "apkmirror",
+      "description": "Browse APKMirror app pages. GitAPK keeps these as external mirror links rather than mirroring APK files.",
+      "website": "https://www.apkmirror.com/"
+    },
+    {
+      "id": "apkmirror-vlc",
+      "name": "VLC for Android",
+      "type": "apkmirror-app",
+      "category": "Video",
+      "repository": "https://www.apkmirror.com/apk/videolabs/vlc/",
+      "source": "APKMirror"
+    },
+    {
+      "id": "apkmirror-firefox",
+      "name": "Firefox Fast & Private Browser",
+      "type": "apkmirror-app",
+      "category": "Communication",
+      "repository": "https://www.apkmirror.com/apk/mozilla/firefox/",
+      "source": "APKMirror"
+    },
+    {
+      "id": "apkmirror-fdroid",
+      "name": "F-Droid",
+      "type": "apkmirror-app",
+      "category": "Utilities",
+      "repository": "https://www.apkmirror.com/apk/f-droid-limited/f-droid/",
+      "source": "APKMirror"
+    }
+  ]
+}
