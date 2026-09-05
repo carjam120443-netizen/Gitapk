@@ -1,0 +1,14 @@
+{
+  "id": "org.fdroid.fdroid",
+  "name": "F-Droid Client",
+  "summary": "The open-source F-Droid client for browsing and installing free software apps.",
+  "description": "The open-source F-Droid client for browsing and installing free software apps.",
+  "category": "Utilities",
+  "license": "GPL-3.0-or-later",
+  "version": "1.18.0",
+  "apk": "https://github.com/f-droid/fdroidclient/releases/download/1.18.0/org.fdroid.fdroid_1018050.apk",
+  "sha256": "605479594b0b372427ca624840f35de3d65fadfbc9d14acf4904191fa83a0ab5",
+  "repository": "https://github.com/f-droid/fdroidclient",
+  "release": "https://github.com/f-droid/fdroidclient/releases/tag/1.18.0",
+  "sourceType": "github"
+}

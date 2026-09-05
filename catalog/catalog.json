@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T12:49:45.804985+00:00",
+  "generatedAt": "2026-09-05T17:03:11.799453+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -14,6 +14,20 @@
       "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
       "repository": "https://github.com/breezy-weather/breezy-weather",
       "release": "https://github.com/breezy-weather/breezy-weather/releases/tag/v6.2.2",
+      "sourceType": "github"
+    },
+    {
+      "id": "org.fdroid.fdroid",
+      "name": "F-Droid Client",
+      "summary": "The open-source F-Droid client for browsing and installing free software apps.",
+      "description": "The open-source F-Droid client for browsing and installing free software apps.",
+      "category": "Utilities",
+      "license": "GPL-3.0-or-later",
+      "version": "1.18.0",
+      "apk": "https://github.com/f-droid/fdroidclient/releases/download/1.18.0/org.fdroid.fdroid_1018050.apk",
+      "sha256": "605479594b0b372427ca624840f35de3d65fadfbc9d14acf4904191fa83a0ab5",
+      "repository": "https://github.com/f-droid/fdroidclient",
+      "release": "https://github.com/f-droid/fdroidclient/releases/tag/1.18.0",
       "sourceType": "github"
     },
     {
@@ -168,6 +182,20 @@
       "sha256": "20b2d6420c4c51591b926160180847094344ecc0bf9b49b10ea38fb80fdb7fc1",
       "repository": "https://github.com/SkyTubeTeam/SkyTube",
       "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v2.999",
+      "sourceType": "github"
+    },
+    {
+      "id": "com.termux",
+      "name": "Termux",
+      "summary": "A terminal and Linux environment for Android.",
+      "description": "A terminal and Linux environment for Android.",
+      "category": "Development",
+      "license": "GPL-3.0-or-later",
+      "version": "v0.118.3",
+      "apk": "https://github.com/termux/termux-app/releases/download/v0.118.3/termux-app_v0.118.3%2Bgithub-debug_universal.apk",
+      "sha256": "7600078440c3c34ef050bc009b00fc3215cb87ec4a449e01a696f74cf4249db2",
+      "repository": "https://github.com/termux/termux-app",
+      "release": "https://github.com/termux/termux-app/releases/tag/v0.118.3",
       "sourceType": "github"
     },
     {
