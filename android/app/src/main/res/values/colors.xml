@@ -5,4 +5,8 @@
     <color name="gitapk_card">#FFFFFF</color>
     <color name="gitapk_text">#17191C</color>
     <color name="gitapk_secondary_text">#626A73</color>
+    <color name="gitapk_accent">#14B8A6</color>
+    <color name="gitapk_accent_soft">#D9F7F2</color>
+    <color name="gitapk_outline">#E1E5E9</color>
+    <color name="gitapk_button_text">#FFFFFF</color>
 </resources>
