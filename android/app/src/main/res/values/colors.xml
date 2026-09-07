@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="gitapk_icon_background">#24292F</color>
-    <color name="gitapk_surface">#F7F8FA</color>
-    <color name="gitapk_card">#FFFFFF</color>
-    <color name="gitapk_text">#17191C</color>
-    <color name="gitapk_secondary_text">#626A73</color>
-    <color name="gitapk_accent">#14B8A6</color>
-    <color name="gitapk_accent_soft">#D9F7F2</color>
-    <color name="gitapk_outline">#E1E5E9</color>
-    <color name="gitapk_button_text">#FFFFFF</color>
+    <!-- Primary palette -->
+    <color name="colorPrimary">#0B7FC7</color>
+    <color name="colorPrimaryVariant">#075E96</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Accent / secondary -->
+    <color name="colorSecondary">#00BFA5</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background / surfaces -->
+    <color name="colorBackground">#F6F8FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnBackground">#0B2540</color>
+    <color name="colorOnSurface">#0B2540</color>
+
+    <!-- Error -->
+    <color name="colorError">#B00020</color>
+
+    <!-- Subtle elements -->
+    <color name="colorCardShadow">#33000000</color>
+    <color name="colorDivider">#1F000000</color>
 </resources>
