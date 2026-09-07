@@ -1,7 +1,6 @@
 {
   "sources": [
     {"id":"org.newpipe","name":"NewPipe","summary":"A lightweight YouTube client for Android.","category":"Video","license":"GPL-3.0-or-later","repository":"TeamNewPipe/NewPipe"},
-    {"id":"com.itsaky.androidide","name":"AndroidIDE","summary":"An IDE for building Android apps directly on Android.","category":"Development","license":"GPL-3.0","repository":"AndroidIDEOfficial/AndroidIDE"},
     {"id":"antennapod","name":"AntennaPod","summary":"An open-source podcast manager for Android.","category":"Audio","license":"GPL-3.0-or-later","repository":"AntennaPod/AntennaPod"},
     {"id":"com.zhanghai.android.files","name":"Material Files","summary":"An open-source file manager with a Material Design interface.","category":"Utilities","license":"Apache-2.0","repository":"zhanghai/MaterialFiles"},
     {"id":"obtainium","name":"Obtainium","summary":"Get Android app updates directly from their source releases.","category":"Utilities","license":"GPL-3.0","repository":"ImranR98/Obtainium"},
@@ -16,9 +15,16 @@
     {"id":"com.professor.zerion","name":"Zerion","summary":"An open-source private messenger with post-quantum encryption.","category":"Communication","license":"GPL-3.0","repository":"zerionproject/Zerion"},
     {"id":"co.hermesdispatch.app","name":"Hermes Dispatch","summary":"An open-source Android client for self-hosted Hermes agents.","category":"Productivity","license":"GPL-3.0","repository":"adebnar/hermes-dispatch-android"},
     {"id":"com.termux","name":"Termux","summary":"A terminal and Linux environment for Android.","category":"Development","license":"GPL-3.0-or-later","repository":"termux/termux-app"},
-    {"id":"org.kde.kdeconnect_tp","name":"KDE Connect","summary":"Connect Android with your desktop for file sharing, notifications, and remote controls.","category":"Utilities","license":"GPL-2.0-or-later","repository":"KDE/kdeconnect-android"},
+    {"id":"org.kde.kdeconnect_tp","name":"KDE Connect","summary":"Connect Android with your desktop for file sharing, notifications, and remote controls.","category":"Utilities","license":"GPL-2.0","repository":"kde/kdeconnect-android"},
     {"id":"org.videolan.vlc","name":"VLC for Android","summary":"A free and open-source multimedia player for Android.","category":"Video","license":"GPL-2.0-or-later","repository":"videolan/vlc-android"},
-    {"id":"org.mozilla.firefox","name":"Firefox for Android","summary":"Mozilla's open-source Firefox browser for Android.","category":"Communication","license":"MPL-2.0","repository":"mozilla-mobile/firefox-android"},
-    {"id":"org.fdroid.fdroid","name":"F-Droid Client","summary":"The open-source F-Droid client for browsing and installing free software apps.","category":"Utilities","license":"GPL-3.0-or-later","repository":"f-droid/fdroidclient"}
+    {"id":"org.mozilla.firefox","name":"Firefox for Android","summary":"Mozilla's open-source Firefox browser for Android.","category":"Communication","license":"MPL-2.0","repository":"mozilla-mobile/fenix"},
+    {"id":"org.fdroid.fdroid","name":"F-Droid Client","summary":"The open-source F-Droid client for browsing and installing free software apps.","category":"Utilities","license":"GPL-3.0-or-later","repository":"f-droid/fdroidclient"},
+
+    {"id":"nextcloud.android","name":"Nextcloud","summary":"Nextcloud Android client for file sync and sharing.","category":"Utilities","license":"AGPL-3.0","repository":"nextcloud/android"},
+    {"id":"owncloud.android","name":"ownCloud","summary":"ownCloud Android client for file sync and sharing.","category":"Utilities","license":"AGPL-3.0","repository":"owncloud/android"},
+    {"id":"osmand","name":"OsmAnd","summary":"Offline maps and navigation for Android.","category":"Navigation","license":"GPL-3.0","repository":"osmandapp/Osmand"},
+    {"id":"opentracks","name":"OpenTracks","summary":"Track your outdoor activities and workouts.","category":"Health & Fitness","license":"Apache-2.0","repository":"OpenTracksApp/OpenTracks"},
+    {"id":"opentasks","name":"OpenTasks","summary":"A simple task manager that syncs with CalDAV/CardDAV.","category":"Productivity","license":"Apache-2.0","repository":"dmfs/opentasks"},
+    {"id":"antivirus.example","name":"Example App","summary":"Placeholder for testing APK discovery.","category":"Utilities","license":"MIT","repository":"example/example"}
   ]
 }
