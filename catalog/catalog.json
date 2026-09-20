@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T08:50:53.612134+00:00",
+  "generatedAt": "2026-09-20T09:21:40.034644+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -121,11 +121,11 @@
       "description": "An open-source file manager with a Material Design interface.",
       "category": "Utilities",
       "license": "Apache-2.0",
-      "version": "v1.7.4",
-      "apk": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.4/app-release-universal.apk",
-      "sha256": "c375592402fa62249ba3114e313efacb11399ebdb2f94f8663c34e828efea1c1",
+      "version": "v1.7.5",
+      "apk": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.5/app-release-universal.apk",
+      "sha256": "f2e7f028fbddf51d7ee90ace27a1ae4b247511e12514d1def6c9e52435feac40",
       "repository": "https://github.com/zhanghai/MaterialFiles",
-      "release": "https://github.com/zhanghai/MaterialFiles/releases/tag/v1.7.4",
+      "release": "https://github.com/zhanghai/MaterialFiles/releases/tag/v1.7.5",
       "sourceType": "github"
     },
     {
