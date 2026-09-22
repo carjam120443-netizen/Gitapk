@@ -7,7 +7,7 @@
   "license": "GPL-3.0",
   "version": "v3.0.11",
   "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.11/zerion-3.0.11.apk",
-  "sha256": "fa9380ec58e17a89e792af8439f2ae5179736b7316b306e2356d87ee37ca3c6c",
+  "sha256": "5b7b24ea25c2cacdcf0458486b6f4467236f9e127a7514e66ff0246f52ff750f",
   "repository": "https://github.com/zerionproject/Zerion",
   "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.11",
   "sourceType": "github"
