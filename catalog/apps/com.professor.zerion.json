@@ -5,10 +5,10 @@
   "description": "An open-source private messenger with post-quantum encryption.",
   "category": "Communication",
   "license": "GPL-3.0",
-  "version": "v3.0.12",
-  "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.12/zerion-3.0.12.apk",
-  "sha256": "c02b77be7631f9830f0b2afd6c7ee601096bd4d46d59dd5d52ffa13cb3f7552e",
+  "version": "v3.0.14",
+  "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.14/zerion-3.0.14.apk",
+  "sha256": "4c6a0e2f063a0e1a203ad54c1378da07900e8765889f1cb869188dd34fdfe108",
   "repository": "https://github.com/zerionproject/Zerion",
-  "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.12",
+  "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.14",
   "sourceType": "github"
 }
