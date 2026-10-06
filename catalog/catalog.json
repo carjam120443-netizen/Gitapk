@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T11:29:25.401974+00:00",
+  "generatedAt": "2026-10-06T11:22:19.116519+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -79,11 +79,11 @@
       "description": "An open-source email client for Android.",
       "category": "Communication",
       "license": "Apache-2.0",
-      "version": "K9MAIL_23_1",
-      "apk": "https://github.com/thunderbird/thunderbird-android/releases/download/K9MAIL_23_1/k9mail-23.1.apk",
-      "sha256": "27751ffd6cb441918b17f41611b858e45aea9dce2f90eeacee03985614ff12ba",
+      "version": "K9MAIL_24_0",
+      "apk": "https://github.com/thunderbird/thunderbird-android/releases/download/K9MAIL_24_0/k9mail-24.0.apk",
+      "sha256": "6b80ec681f0c882ca334f4d533778e6e50e814ee214db798d9e129a369a85af4",
       "repository": "https://github.com/thunderbird/thunderbird-android",
-      "release": "https://github.com/thunderbird/thunderbird-android/releases/tag/K9MAIL_23_1",
+      "release": "https://github.com/thunderbird/thunderbird-android/releases/tag/K9MAIL_24_0",
       "sourceType": "github"
     },
     {
