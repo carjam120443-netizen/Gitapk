@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:22:19.116519+00:00",
+  "generatedAt": "2026-10-07T11:04:49.691495+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -163,11 +163,11 @@
       "description": "A lightweight, open-source Reddit client for Android.",
       "category": "Social",
       "license": "GPL-3.0-or-later",
-      "version": "v1.26",
-      "apk": "https://github.com/QuantumBadger/RedReader/releases/download/v1.26/RedReader-v1.26.apk",
-      "sha256": "63e67526caab5f3f5efcb604e17e3664470670580590749c875cb6ca0a047e1c",
+      "version": "v1.27",
+      "apk": "https://github.com/QuantumBadger/RedReader/releases/download/v1.27/RedReader-v1.27.apk",
+      "sha256": "e52dcbeeebfff8baf7be84023992be27a8ee514b7e4219ea5bb351a143896448",
       "repository": "https://github.com/QuantumBadger/RedReader",
-      "release": "https://github.com/QuantumBadger/RedReader/releases/tag/v1.26",
+      "release": "https://github.com/QuantumBadger/RedReader/releases/tag/v1.27",
       "sourceType": "github"
     },
     {
@@ -205,11 +205,11 @@
       "description": "An open-source private messenger with post-quantum encryption.",
       "category": "Communication",
       "license": "GPL-3.0",
-      "version": "v3.0.14",
-      "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.14/zerion-3.0.14.apk",
-      "sha256": "4c6a0e2f063a0e1a203ad54c1378da07900e8765889f1cb869188dd34fdfe108",
+      "version": "v3.0.15",
+      "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.15/zerion-3.0.15.apk",
+      "sha256": "5f25fd6416ecc446e3910a984667207363531ce1fd6cd7f7974f7dcbe7e8bf3f",
       "repository": "https://github.com/zerionproject/Zerion",
-      "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.14",
+      "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.15",
       "sourceType": "github"
     }
   ]

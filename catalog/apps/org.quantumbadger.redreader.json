@@ -5,10 +5,10 @@
   "description": "A lightweight, open-source Reddit client for Android.",
   "category": "Social",
   "license": "GPL-3.0-or-later",
-  "version": "v1.26",
-  "apk": "https://github.com/QuantumBadger/RedReader/releases/download/v1.26/RedReader-v1.26.apk",
-  "sha256": "63e67526caab5f3f5efcb604e17e3664470670580590749c875cb6ca0a047e1c",
+  "version": "v1.27",
+  "apk": "https://github.com/QuantumBadger/RedReader/releases/download/v1.27/RedReader-v1.27.apk",
+  "sha256": "e52dcbeeebfff8baf7be84023992be27a8ee514b7e4219ea5bb351a143896448",
   "repository": "https://github.com/QuantumBadger/RedReader",
-  "release": "https://github.com/QuantumBadger/RedReader/releases/tag/v1.26",
+  "release": "https://github.com/QuantumBadger/RedReader/releases/tag/v1.27",
   "sourceType": "github"
 }
