@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:04:49.691495+00:00",
+  "generatedAt": "2026-10-08T11:23:14.719477+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -205,11 +205,11 @@
       "description": "An open-source private messenger with post-quantum encryption.",
       "category": "Communication",
       "license": "GPL-3.0",
-      "version": "v3.0.15",
-      "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.15/zerion-3.0.15.apk",
-      "sha256": "5f25fd6416ecc446e3910a984667207363531ce1fd6cd7f7974f7dcbe7e8bf3f",
+      "version": "v3.0.16",
+      "apk": "https://github.com/zerionproject/Zerion/releases/download/v3.0.16/zerion-3.0.16.apk",
+      "sha256": "2c676a32b406a3353b9cc4b8922edb9c756065295dd5b20fd7797c95b5d3ced6",
       "repository": "https://github.com/zerionproject/Zerion",
-      "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.15",
+      "release": "https://github.com/zerionproject/Zerion/releases/tag/v3.0.16",
       "sourceType": "github"
     }
   ]
