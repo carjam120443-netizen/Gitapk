@@ -55,6 +55,9 @@ Every generated app entry includes a SHA-256 checksum for the APK artifact. The 
 
 🚧 Early development — the client, catalog format, APK installation flow, and automated GitHub release catalog are now in place.
 
+> [!NOTE]
+> **GitAPK may receive updates more slowly going forward.** I'm still deciding whether to retire this project or give it new branding, so neither a retirement nor a rebrand has been decided yet. For now, the project's future is undecided. 😅
+
 ## License
 
 Apache-2.0
