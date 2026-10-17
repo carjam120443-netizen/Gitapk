@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T09:01:49.485090+00:00",
+  "generatedAt": "2026-10-17T08:52:32.702160+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -149,11 +149,11 @@
       "description": "Get Android app updates directly from their source releases.",
       "category": "Utilities",
       "license": "GPL-3.0",
-      "version": "v1.6.17",
-      "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.17/app-arm64-v8a-fdroid-release.apk",
-      "sha256": "8d03b4f02f070d8e64f448ce77ad66daccce9a585e4015b984ee5a7ddee9c29c",
+      "version": "v1.7.0",
+      "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.0/app-arm64-v8a-fdroid-release.apk",
+      "sha256": "2cda9b8cc04a43f3aad492b42e8f8b0756bc5d9172a38860da3bcfda608ce61b",
       "repository": "https://github.com/ImranR98/Obtainium",
-      "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.6.17",
+      "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.0",
       "sourceType": "github"
     },
     {
