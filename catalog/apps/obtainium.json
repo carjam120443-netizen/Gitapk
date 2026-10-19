@@ -5,10 +5,10 @@
   "description": "Get Android app updates directly from their source releases.",
   "category": "Utilities",
   "license": "GPL-3.0",
-  "version": "v1.7.0",
-  "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.0/app-arm64-v8a-fdroid-release.apk",
-  "sha256": "2cda9b8cc04a43f3aad492b42e8f8b0756bc5d9172a38860da3bcfda608ce61b",
+  "version": "v1.7.1",
+  "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.1/app-arm64-v8a-fdroid-release.apk",
+  "sha256": "78f330b9e23c94bd3d5958bd707606821af9ad332face5d90e9d9e5d1fe0cd07",
   "repository": "https://github.com/ImranR98/Obtainium",
-  "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.0",
+  "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.1",
   "sourceType": "github"
 }
