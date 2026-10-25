@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T08:52:51.776027+00:00",
+  "generatedAt": "2026-10-25T09:09:30.029122+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -37,11 +37,11 @@
       "description": "A simple open-source file manager with privacy in mind.",
       "category": "Utilities",
       "license": "Apache-2.0",
-      "version": "1.6.2",
-      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.2/file-manager-14-foss-release.apk",
-      "sha256": "c2993c75ea7287e7ede354b061d9c8772aa9b4b050e7660ec1ebc3592dc3d051",
+      "version": "1.6.3",
+      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.3/file-manager-15-foss-release.apk",
+      "sha256": "9ba65c2ab8ca612fd90d8eba5320572ed1e1f99f2c6139244c7e05ef9a377d36",
       "repository": "https://github.com/FossifyOrg/File-Manager",
-      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.2",
+      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.3",
       "sourceType": "github"
     },
     {
@@ -51,11 +51,11 @@
       "description": "A private, open-source photo and video gallery.",
       "category": "Photography",
       "license": "Apache-2.0",
-      "version": "1.14.0",
-      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.0/gallery-29-foss-release.apk",
-      "sha256": "cfa321d7467b116741689f8f118b46011c882a4c2359b9320111f87c998af373",
+      "version": "1.14.1",
+      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.1/gallery-30-foss-release.apk",
+      "sha256": "9a9f2e06882abfdae6f4c86aeaa83ae8102b2e081591df0eb2134a6f629657c7",
       "repository": "https://github.com/FossifyOrg/Gallery",
-      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.0",
+      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.1",
       "sourceType": "github"
     },
     {
@@ -149,11 +149,11 @@
       "description": "Get Android app updates directly from their source releases.",
       "category": "Utilities",
       "license": "GPL-3.0",
-      "version": "v1.7.2",
-      "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.2/app-arm64-v8a-fdroid-release.apk",
-      "sha256": "abfacb407183becb8d6dbdea5ff3b619c83c2bad8c04245b65af97a4aeec6642",
+      "version": "v1.7.3",
+      "apk": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-arm64-v8a-fdroid-release.apk",
+      "sha256": "afd28d1ecf7a5fa462517d22007f4b2a3be062bd80193dadfc1f93d2d8824b14",
       "repository": "https://github.com/ImranR98/Obtainium",
-      "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.2",
+      "release": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.3",
       "sourceType": "github"
     },
     {

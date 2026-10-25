@@ -5,10 +5,10 @@
   "description": "A private, open-source photo and video gallery.",
   "category": "Photography",
   "license": "Apache-2.0",
-  "version": "1.14.0",
-  "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.0/gallery-29-foss-release.apk",
-  "sha256": "cfa321d7467b116741689f8f118b46011c882a4c2359b9320111f87c998af373",
+  "version": "1.14.1",
+  "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.1/gallery-30-foss-release.apk",
+  "sha256": "9a9f2e06882abfdae6f4c86aeaa83ae8102b2e081591df0eb2134a6f629657c7",
   "repository": "https://github.com/FossifyOrg/Gallery",
-  "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.0",
+  "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.1",
   "sourceType": "github"
 }
