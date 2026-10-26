@@ -5,10 +5,10 @@
   "description": "A lightweight open-source text editor and Markdown notebook.",
   "category": "Productivity",
   "license": "GPL-3.0-or-later",
-  "version": "v2.16.1",
-  "apk": "https://github.com/gsantner/markor/releases/download/v2.16.1/net.gsantner.markor-v163-2.16.1-flavorDefault-release.apk",
-  "sha256": "e88cdcced7aa3dca25e6b9c7a9bdcfad3e3988ee545be951f42bf9441b5e46bf",
+  "version": "v2026.10.0",
+  "apk": "https://github.com/gsantner/markor/releases/download/v2026.10.0/net.gsantner.markor-v164-2026.10.0-flavorDefault-release.apk",
+  "sha256": "c105bf5cc9530f7486b984323a185c17086b459a56ec936a5990ceb8da3d8440",
   "repository": "https://github.com/gsantner/markor",
-  "release": "https://github.com/gsantner/markor/releases/tag/v2.16.1",
+  "release": "https://github.com/gsantner/markor/releases/tag/v2026.10.0",
   "sourceType": "github"
 }
