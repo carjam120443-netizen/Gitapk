@@ -5,10 +5,10 @@
   "description": "An ad-free, open-source YouTube client for Android.",
   "category": "Video",
   "license": "GPL-3.0",
-  "version": "v3.000",
-  "apk": "https://github.com/SkyTubeTeam/SkyTube/releases/download/v3.000/SkyTube-Extra-3.000.apk",
-  "sha256": "243ad32320e1b5393f4dd4482c25af76216e560e9aa3e43c9f6ac173446cfcf6",
+  "version": "v3.001",
+  "apk": "https://github.com/SkyTubeTeam/SkyTube/releases/download/v3.001/SkyTube-Extra-3.001.apk",
+  "sha256": "21a76a17ab95a8b32342747d9f3d5c94bea003c9996e17f752b755abf68974a8",
   "repository": "https://github.com/SkyTubeTeam/SkyTube",
-  "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v3.000",
+  "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v3.001",
   "sourceType": "github"
 }
