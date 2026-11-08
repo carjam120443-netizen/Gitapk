@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T11:06:50.399356+00:00",
+  "generatedAt": "2026-11-08T11:16:42.900350+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -37,11 +37,11 @@
       "description": "A simple open-source file manager with privacy in mind.",
       "category": "Utilities",
       "license": "Apache-2.0",
-      "version": "1.6.3",
-      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.3/file-manager-15-foss-release.apk",
-      "sha256": "9ba65c2ab8ca612fd90d8eba5320572ed1e1f99f2c6139244c7e05ef9a377d36",
+      "version": "1.6.4",
+      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.4/file-manager-16-foss-release.apk",
+      "sha256": "6e4656b8947966a2853681691bb0005e802ee89983fb141ec0f7186497dcd5f4",
       "repository": "https://github.com/FossifyOrg/File-Manager",
-      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.3",
+      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.4",
       "sourceType": "github"
     },
     {
@@ -51,11 +51,11 @@
       "description": "A private, open-source photo and video gallery.",
       "category": "Photography",
       "license": "Apache-2.0",
-      "version": "1.14.1",
-      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.1/gallery-30-foss-release.apk",
-      "sha256": "9a9f2e06882abfdae6f4c86aeaa83ae8102b2e081591df0eb2134a6f629657c7",
+      "version": "1.14.2",
+      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.2/gallery-40-foss-release.apk",
+      "sha256": "ff3e6122ccf1873620e9e8e374b9c9dec4d7eb3a8f42559135bd82562c65f41f",
       "repository": "https://github.com/FossifyOrg/Gallery",
-      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.1",
+      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.2",
       "sourceType": "github"
     },
     {
@@ -135,11 +135,11 @@
       "description": "A lightweight YouTube client for Android.",
       "category": "Video",
       "license": "GPL-3.0-or-later",
-      "version": "v0.29.1",
-      "apk": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
-      "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
+      "version": "v0.29.2",
+      "apk": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.2/NewPipe_v0.29.2.apk",
+      "sha256": "318bd6a51f216027ba340f2934e59fa9c0d078d0f2f526a4af84354aee60651f",
       "repository": "https://github.com/TeamNewPipe/NewPipe",
-      "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+      "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.2",
       "sourceType": "github"
     },
     {

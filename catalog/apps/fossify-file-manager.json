@@ -5,10 +5,10 @@
   "description": "A simple open-source file manager with privacy in mind.",
   "category": "Utilities",
   "license": "Apache-2.0",
-  "version": "1.6.3",
-  "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.3/file-manager-15-foss-release.apk",
-  "sha256": "9ba65c2ab8ca612fd90d8eba5320572ed1e1f99f2c6139244c7e05ef9a377d36",
+  "version": "1.6.4",
+  "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.4/file-manager-16-foss-release.apk",
+  "sha256": "6e4656b8947966a2853681691bb0005e802ee89983fb141ec0f7186497dcd5f4",
   "repository": "https://github.com/FossifyOrg/File-Manager",
-  "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.3",
+  "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.4",
   "sourceType": "github"
 }
