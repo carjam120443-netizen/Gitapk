@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T13:04:22.387047+00:00",
+  "generatedAt": "2026-11-10T12:39:30.272407+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -135,11 +135,11 @@
       "description": "A lightweight YouTube client for Android.",
       "category": "Video",
       "license": "GPL-3.0-or-later",
-      "version": "v0.29.2",
-      "apk": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.2/NewPipe_v0.29.2.apk",
-      "sha256": "318bd6a51f216027ba340f2934e59fa9c0d078d0f2f526a4af84354aee60651f",
+      "version": "v0.29.3",
+      "apk": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.3/NewPipe_v0.29.3.apk",
+      "sha256": "0ab2b9b5103bd3173cb4540f9a2fe660d93a44ac17254e7d13b26d1d8f012192",
       "repository": "https://github.com/TeamNewPipe/NewPipe",
-      "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.2",
+      "release": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.3",
       "sourceType": "github"
     },
     {
