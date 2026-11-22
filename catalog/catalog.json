@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T12:39:24.514591+00:00",
+  "generatedAt": "2026-11-22T12:35:31.916085+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -37,11 +37,11 @@
       "description": "A simple open-source file manager with privacy in mind.",
       "category": "Utilities",
       "license": "Apache-2.0",
-      "version": "1.6.4",
-      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.4/file-manager-16-foss-release.apk",
-      "sha256": "6e4656b8947966a2853681691bb0005e802ee89983fb141ec0f7186497dcd5f4",
+      "version": "1.6.5",
+      "apk": "https://github.com/FossifyOrg/File-Manager/releases/download/1.6.5/file-manager-17-foss-release.apk",
+      "sha256": "ba653eade09420992b7d0168febf2bf2b7c0b5392c0c1199a5c2a752d20dc9f4",
       "repository": "https://github.com/FossifyOrg/File-Manager",
-      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.4",
+      "release": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.5",
       "sourceType": "github"
     },
     {
@@ -51,11 +51,11 @@
       "description": "A private, open-source photo and video gallery.",
       "category": "Photography",
       "license": "Apache-2.0",
-      "version": "1.14.2",
-      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.2/gallery-40-foss-release.apk",
-      "sha256": "ff3e6122ccf1873620e9e8e374b9c9dec4d7eb3a8f42559135bd82562c65f41f",
+      "version": "1.14.3",
+      "apk": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.3/gallery-50-foss-release.apk",
+      "sha256": "2d330eda61579d2ae499bc2accab6e4d6bb77de96d2877ff90e481fac96e1b76",
       "repository": "https://github.com/FossifyOrg/Gallery",
-      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.2",
+      "release": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.3",
       "sourceType": "github"
     },
     {
