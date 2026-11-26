@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T14:21:56.049818+00:00",
+  "generatedAt": "2026-11-26T13:54:38.605445+00:00",
   "apps": [
     {
       "id": "breezy-weather",
@@ -177,11 +177,11 @@
       "description": "An ad-free, open-source YouTube client for Android.",
       "category": "Video",
       "license": "GPL-3.0",
-      "version": "v3.003",
-      "apk": "https://github.com/SkyTubeTeam/SkyTube/releases/download/v3.003/SkyTube-Extra-3.003.apk",
-      "sha256": "02a65ab5aebe78f94f376387ff050ee1ca38e9387e2d58bc21d31ffe7842f741",
+      "version": "v3.004",
+      "apk": "https://github.com/SkyTubeTeam/SkyTube/releases/download/v3.004/SkyTube-Extra-3.004.apk",
+      "sha256": "69c19d693b905a072798e0bafe865ea4c64bf23524ff40d70ce9723a2a7048a6",
       "repository": "https://github.com/SkyTubeTeam/SkyTube",
-      "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v3.003",
+      "release": "https://github.com/SkyTubeTeam/SkyTube/releases/tag/v3.004",
       "sourceType": "github"
     },
     {
